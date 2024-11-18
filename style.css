@@ -1,0 +1,33 @@
+/* Remove default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Make sure the body and html take up the full screen */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+/* Center the GIF and make it fill the screen */
+.gif-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    width: 100vw; /* Full width of the viewport */
+    overflow: hidden; /* Prevents overflow if the GIF is too large */
+}
+
+/* Make sure the GIF itself fills the screen */
+img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain; /* Ensures the entire GIF fits within the container */
+        object-position: center; /* Keeps it centered */
+    
+    
+
+}
